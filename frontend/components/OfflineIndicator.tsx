@@ -5,7 +5,7 @@ import { useBudgetStore } from "../lib/store";
 import { postSync, getLatest } from "../lib/syncClient";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+  process.env.NEXT_PUBLIC_API_URL;
 
 // small helper to fetch with timeout
 async function fetchWithTimeout(
@@ -168,3 +168,4 @@ export default function OfflineIndicator() {
     </div>
   );
 }
+
