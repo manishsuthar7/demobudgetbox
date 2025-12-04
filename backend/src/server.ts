@@ -10,7 +10,7 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 
-const pool = new Pool({ connectionString: process.env.DATABASE_URL || 'postgresql://postgres:root@localhost:5432/budgetbox' })
+const pool = new Pool({ connectionString: process.env.DATABASE_URL })
 
 let dbConnected = false
 
@@ -102,7 +102,25 @@ app.get('/budget/latest', async (req, res) => {
 })
 
 const PORT = process.env.PORT || 4000
-app.listen(PORT, async () => {
+const server = app.listen(PORT, async () => {
   console.log(`Backend running on ${PORT}`)
   await ensureDemoUser()
 })
+
+// Handle errors
+server.on('error', (err) => {
+  console.error('Server error:', err)
+})
+
+process.on('uncaughtException', (err) => {
+  console.error('Uncaught exception:', err)
+})
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://demobudgetbox-webtechpoint-mytipumt4.vercel.app",
+    "https://demobudgetbox.vercel.app", // ← Use your real Vercel domain here
+  ],
+  credentials: true,
+}));

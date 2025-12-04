@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: budgetbox-backend
+    env: node
+    repo: https://github.com/manishsuthar7/demobudgetbox
+    branch: master
+    buildCommand: npm install && npm run build
+    startCommand: node dist/server.js
+    plan: free
+    autoDeploy: true
