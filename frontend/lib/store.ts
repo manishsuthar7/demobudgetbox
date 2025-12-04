@@ -110,13 +110,20 @@ export const useBudgetStore = create<StoreState>()(
         replaceBudget: (serverBudget) => {
           const state = get();
           const month = state.selectedMonth;
+
           const updated: Budget = {
             ...emptyBudget,
-            ...serverBudget,
+            income: Number((serverBudget as any).income ?? 0),
+            bills: Number((serverBudget as any).bills ?? 0),
+            food: Number((serverBudget as any).food ?? 0),
+            transport: Number((serverBudget as any).transport ?? 0),
+            subscriptions: Number((serverBudget as any).subscriptions ?? 0),
+            misc: Number((serverBudget as any).misc ?? 0),
             lastSavedAt:
-              serverBudget.updated_at || new Date().toISOString(),
+              (serverBudget as any).updated_at || new Date().toISOString(),
             syncStatus: "synced",
           };
+
           set({
             budget: updated,
             budgetsByMonth: {
@@ -133,3 +140,4 @@ export const useBudgetStore = create<StoreState>()(
     }
   )
 );
+
