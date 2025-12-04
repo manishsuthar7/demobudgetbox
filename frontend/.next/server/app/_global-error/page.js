@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__1fceee5f._.js")
+R.c("server/chunks/ssr/BudgetBox_frontend_dc95f962._.js")
+R.c("server/chunks/ssr/b4b03_next_dist_4cd87390._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__af4990cd._.js")
+R.c("server/chunks/ssr/b4b03_next_dist_583aab49._.js")
+R.c("server/chunks/ssr/b4b03_next_dist_9ab77285._.js")
+R.c("server/chunks/ssr/BudgetBox_frontend_app_e8561470._.js")
+R.c("server/chunks/ssr/BudgetBox_frontend__next-internal_server_app__global-error_page_actions_0a9f0853.js")
+R.m(83968)
+module.exports=R.m(83968).exports

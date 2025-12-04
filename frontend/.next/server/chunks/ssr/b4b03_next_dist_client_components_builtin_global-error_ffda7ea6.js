@@ -1,0 +1,3 @@
+module.exports=[49615,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(63658);a.n(d("[project]/BudgetBox/frontend/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},95997,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(63658);a.n(d("[project]/BudgetBox/frontend/node_modules/next/dist/client/components/builtin/global-error.js"))},7686,a=>{"use strict";a.i(49615);var b=a.i(95997);a.n(b)}];
+
+//# sourceMappingURL=b4b03_next_dist_client_components_builtin_global-error_ffda7ea6.js.map

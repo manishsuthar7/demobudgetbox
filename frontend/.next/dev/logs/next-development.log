@@ -1,0 +1,170 @@
+[00:00:22.036] Server  LOG      ✓ Ready in 17s
+[00:00:25.072] Server  LOG      ○ Compiling /dashboard ...
+[00:00:54.416] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/dashboard" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/BudgetBox...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+              <DashboardPage params={Promise} searchParams={Promise}>
+                <main className="min-h-scre...">
+                  <div className="max-w-6xl ...">
+                    <header className="flex flex-...">
+                      <div>
+                      <div className="flex flex-...">
+                        <select>
+                        <OfflineIndicator>
+                          <div className="inline-fle...">
+                            <div className="flex items...">
+                              <span
++                               className="h-2.5 w-2.5 rounded-full bg-emerald-500"
+-                               className="h-2.5 w-2.5 rounded-full bg-red-500"
+                              >
+                              <span className="text-sm text-slate-700">
++                               Online
+-                               Offline
+                            ...
+                    ...
+          ...
+        ...
+
+[00:01:21.521] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/BudgetBox...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+              <DashboardPage params={Promise} searchParams={Promise}>
+                <main className="min-h-scre...">
+                  <div className="max-w-6xl ...">
+                    <header className="flex flex-...">
+                      <div>
+                      <div className="flex flex-...">
+                        <select>
+                        <OfflineIndicator>
+                          <div className="inline-fle...">
+                            <div className="flex items...">
+                              <span
++                               className="h-2.5 w-2.5 rounded-full bg-emerald-500"
+-                               className="h-2.5 w-2.5 rounded-full bg-red-500"
+                              >
+                              <span className="text-sm text-slate-700">
++                               Online
+-                               Offline
+                            ...
+                    ...
+          ...
+        ...
+
+[00:02:51.540] Server  LOG      ○ Compiling /_not-found/page ...
+[00:02:55.665] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/BudgetBox...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+              <DashboardPage params={Promise} searchParams={Promise}>
+                <main className="min-h-scre...">
+                  <div className="max-w-6xl ...">
+                    <header className="flex flex-...">
+                      <div>
+                      <div className="flex flex-...">
+                        <select>
+                        <OfflineIndicator>
+                          <div className="inline-fle...">
+                            <div className="flex items...">
+                              <span
++                               className="h-2.5 w-2.5 rounded-full bg-emerald-500"
+-                               className="h-2.5 w-2.5 rounded-full bg-red-500"
+                              >
+                              <span className="text-sm text-slate-700">
++                               Online
+-                               Offline
+                            ...
+                    ...
+          ...
+        ...
+
+[00:09:42.353] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:42.597] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="/BudgetBox...">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function DashboardPage} serverProvidedParams={{...}}>
+              <DashboardPage params={Promise} searchParams={Promise}>
+                <main className="min-h-scre...">
+                  <div className="max-w-6xl ...">
+                    <header className="flex flex-...">
+                      <div>
+                      <div className="flex flex-...">
+                        <select>
+                        <OfflineIndicator>
+                          <div className="inline-fle...">
+                            <div className="flex items...">
+                              <span
++                               className="h-2.5 w-2.5 rounded-full bg-emerald-500"
+-                               className="h-2.5 w-2.5 rounded-full bg-red-500"
+                              >
+                              <span className="text-sm text-slate-700">
++                               Online
+-                               Offline
+                            ...
+                    ...
+          ...
+        ...
+
+[00:18:55.380] Server  LOG      ✓ Compiled in 297ms
+[00:19:42.907] Server  LOG      ✓ Compiled in 559ms

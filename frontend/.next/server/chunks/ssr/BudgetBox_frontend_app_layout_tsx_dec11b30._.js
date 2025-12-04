@@ -1,0 +1,3 @@
+module.exports=[72208,a=>{"use strict";var b=a.i(58278);function c({children:a}){return(0,b.jsx)("html",{lang:"en",children:(0,b.jsx)("body",{className:"min-h-screen bg-slate-100 text-slate-900 antialiased",children:a})})}a.s(["default",()=>c,"metadata",0,{title:"BudgetBox",description:"Local-first monthly budget planner"}])}];
+
+//# sourceMappingURL=BudgetBox_frontend_app_layout_tsx_dec11b30._.js.map
