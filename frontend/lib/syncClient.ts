@@ -1,6 +1,6 @@
 // frontend/lib/syncClient.ts
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000";
+  process.env.NEXT_PUBLIC_API_URL;
 
 import type { BudgetFields } from "./store";
 
@@ -36,3 +36,4 @@ export async function getLatest(month: string): Promise<{
   }
   return res.json();
 }
+
