@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-       "https://demobudgetbox.vercel.app/"
+       "https://demobudgetbox.vercel.app"
     ],
     credentials: true,
   })
@@ -224,4 +224,5 @@ app.post('/login', async (req, res) => {
       .json({ success: false, error: 'Internal server error' })
   }
 })
+
 
