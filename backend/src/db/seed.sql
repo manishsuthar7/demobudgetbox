@@ -3,3 +3,5 @@
 INSERT INTO users (email, password_hash)
 VALUES ('hire-me@anshumat.org', '<BCRYPT_HASH_OF_HireMe@2025!>')
 ON CONFLICT DO NOTHING;
+
+
